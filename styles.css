@@ -1,0 +1,143 @@
+
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background:whitesmoke;
+}
+
+h1 {
+  font-size: 80px;
+}
+.box h1 {
+  margin: 100;
+}
+h2 {
+  margin:100px
+}
+h3 {
+  font-size: 30px;
+}
+
+/* Giving our navbar some padding and a background color */
+.navbar navbar-default {
+  color: lightblue;
+  text-decoration: darkturquoise
+}
+/* Making our navbar li's inline-block elements this makes it so we can 
+have multiple on the same line. Floats could have been used too */
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* setting navbar brand color */
+.navbar-brand {
+  color: darkturquoise;
+  text-decoration: underline;
+}
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 60px;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+.p {
+  margin: 250px;
+}
+
+#intro h1 {
+  color:darkturquoise;
+  margin-left:60px;
+}
+
+#summary p {
+  margin-left:60px;
+}
+
+#pagep {
+  margin-left:100px;
+  margin-bottom:100px;
+}
+
+#pageq {
+  margin-left:100px;
+  margin-bottom:25px;
+}
+
+#gallery1 {
+  margin-left:100px;
+  margin-bottom:100px;
+}
+
+#nav-select {
+  visibility: hidden;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 5px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+}
+
+.img-responsive {
+  height: 1500px;
+  width: 200px;
+  float: left;  
+}
+
+#firstcont {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.table {
+  margin-left:40px;
+}
+
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
